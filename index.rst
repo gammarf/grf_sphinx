@@ -48,6 +48,11 @@ The server is composed of both open-source and proprietary software.
 
     Signal strength at a frequency, graphed over time.
 
+.. figure:: _static/images/tpms.png
+    :scale: 70 %
+
+    Car activity in the node's local area (as determined by `TPMS <https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system>`_ signals)
+
 .. figure:: _static/images/servermap.png
     :scale: 100 %
 

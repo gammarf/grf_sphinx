@@ -27,7 +27,7 @@ Configuration
 Below is an example configuration file::
 
     [modules]
-    modules = scanner, adsb, freqwatch, remotetask, p25rx, snapshot, tdoa
+    modules = scanner, adsb, freqwatch, remotetask, p25rx, snapshot, tdoa, ism433
 
     [connector]
     station_id = demo
@@ -215,8 +215,8 @@ command for usage instructions.
     * ``snapshot``: Take a picture of a swath of the RF spectrum and send it to
       the server.
 
-    * ``tdoa``: Work with other stations to try and locate a transmitter.  Accuracy
-      depends on the location of the stations with respect to the transmitter
+    * ``ism433``: Collect and send ISM433 (such as Tire Pressure Monitoring System
+      (TPMS) information)
 
 
 Misc. Considerations

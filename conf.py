@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# GammaRF documentation build configuration file, created by
+# ΓRF documentation build configuration file, created by
 # sphinx-quickstart on Sun Sep 25 14:26:31 2016.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,8 +41,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'GammaRF'
-copyright = u'2017, GammaRF'
+project = u'ΓRF'
+copyright = u'2018, ΓRF'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -217,8 +217,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'gammarf', u'GammaRF Documentation',
-     [u'GammaRF'], 1)
+    ('index', 'gammarf', u'ΓRF Documentation',
+     [u'ΓRF'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -231,8 +231,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'GammaRF', u'GammaRF Documentation',
-   u'GammaRF', 'GammaRF', 'One line description of project.',
+  ('index', 'ΓRF', u'ΓRF Documentation',
+   u'ΓRF', 'ΓRF', 'One line description of project.',
    'Miscellaneous'),
 ]
 
