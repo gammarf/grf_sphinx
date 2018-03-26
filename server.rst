@@ -3,7 +3,7 @@ Server
 
 Server source is not (yet) open.  This section covers basic server structure and usage from a consumer standpoint.
 
-You can log into the demo server (http://gammarf.io:8080); user and pass are 'grfdemo'.
+You can log into the demo server (https://gammarf.io:8080); user and pass are 'grfdemo'.
 
 
 Organization
