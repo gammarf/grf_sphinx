@@ -27,7 +27,7 @@ Configuration
 Below is an example configuration file::
 
     [modules]
-    modules = scanner, adsb, freqwatch, remotetask, p25rx, snapshot, tdoa, ism433
+    modules = scanner, adsb, freqwatch, remotetask, p25rx, snapshot, tdoa, ism433, single
 
     [connector]
     station_id = demo
@@ -211,6 +211,8 @@ command for usage instructions.
       squelch (a configurable level above the average at that frequency.)  Be
       careful adjusting this module's ``hit_db`` parameter.  If it's too low, noise
       will trigger false hits.  Particularly noisy frequencies may do that, anyway.
+
+    * ``single``: Monitor a single frequency for power above a specified threshold
 
     * ``snapshot``: Take a picture of a swath of the RF spectrum and send it to
       the server.
