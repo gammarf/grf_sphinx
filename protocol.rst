@@ -97,7 +97,7 @@ Utility API
 
 URL: http://[server]:[port]/util/locations
 
-Returns a list of logged in stations, with a list of modules each is running
+Returns a list of logged in stations, with a list of modules each is running.  Append a stationid to the URL to just retrieve one station.
 
 **loggedin**
 
@@ -105,10 +105,15 @@ URL: http://[server]:[port]/util/loggedin/[stationid]
 
 Returns 'true' or 'false', depending on whether [stationid] is logged in
 
+**modrates**
+
+URL: http://[server]:[port]/util/modrates/[stationid]
+
+Transmit information for a station's running modules
+
 **refxmtrs**
 
 URL: http://[server]:[port]/util/refxmtrs
 
 Returns a list of reference transmitters for the cluster, with a list for each
 that includes callsign, location, power, and frequency.
-

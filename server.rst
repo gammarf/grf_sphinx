@@ -35,3 +35,6 @@ status (offline, online using static coordinates, online using GPS).
 
 A menu on the left provides access to the different functions.  For now these include 'snapshot', 'interesting', and 'dashboards'.
 The later are based on Grafana.
+
+Triggers and Alerts
+===================
