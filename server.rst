@@ -91,8 +91,6 @@ Triggers
     :align: center
     :width: 70%
 
-    Currently active triggers
-
 The triggers system allows the user to define criteria on which an alert will be recorded and issued.  Triggers are sent to a slack
 channel, as defined in the server configuration.
 
