@@ -31,10 +31,25 @@ stations in your cluster, and your cluster's reference transmitters.  Icons for 
 status (offline, online using static coordinates, online using GPS).
 
 .. image:: _static/images/servermap.png
-    :scale: 100 %
+    :scale: 35 %
 
 A menu on the left provides access to the different functions.  For now these include 'snapshot', 'interesting', and 'dashboards'.
 The later are based on Grafana.
 
-Triggers and Alerts
-===================
+Triggers
+========
+
+.. image:: _static/images/triggers.png
+    :scale: 50 %
+
+The triggers system allows the user to define criteria on which an alert will be recorded and issued.  Triggers are sent to a slack
+channel, as defined in the server configuration.
+
+The following types of triggers are defined.  They are not all available for every subject:
+
+* hit: Any activity in a time series triggers an alert
+* pwr >=: Power exceeding or equal to the trigger value will trigger an alert
+* pwr <: Power less than the trigger value will trigger an alert
+* rate >=: Activity in the time series at a rate greater than or equal to the trigger value will trigger an alert
+* rate <: Activity at a rate less than the trigger value will trigger an alert
+* no hits past 'x' minutes: No activity for the trigger value (as minutes) will trigger an alert.  Useful for monitoring station health (with the 'stations' subject)

@@ -117,3 +117,9 @@ URL: http://[server]:[port]/util/refxmtrs
 
 Returns a list of reference transmitters for the cluster, with a list for each
 that includes callsign, location, power, and frequency.
+
+**numalerts**
+
+URL: http://[server]:[port]/util/numalerts/[stationid]
+
+Returns the total number of alerts (active triggers) for the specified station.
