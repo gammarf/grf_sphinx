@@ -65,6 +65,8 @@ Target Details
 A target (such as a frequency) has time series information stored in the server.  This information can be displayed and analyzed.
 
 .. figure:: _static/images/srv_adsb_detail.jpg
+    :align: center
+    :width: 70%
 
     Timeline of activity for a particular monitored aircraft
 
@@ -86,6 +88,8 @@ Triggers
 ========
 
 .. figure:: _static/images/srv_triggers.jpg
+    :align: center
+    :width: 70%
 
     Currently active triggers
 
