@@ -3,8 +3,14 @@ Client
 
 This covers the open-source client.
 
-.. image:: _static/images/client.png
-    :scale: 70 %
+ .. figure:: _static/images/client.jpg
+
+    ΓRF client software
+
+ .. figure:: _static/images/array.jpg
+
+    An array of RTL-SDR SDRs, used by a client
+
 
 
 Installation
@@ -16,7 +22,7 @@ Installation
 
 3. ``./prepare; ./run.sh`` (assumes you have Docker installed)
 
-4. If you're using HackRF, flash the rom with the newest firmware version.  This is a must!
+4. If you're using a HackRF (necessary for most functionality), flash the rom with the newest firmware version.  This is a must!
 
 5. Make sure all clients are running time synchronization services (ntpd, timesyncd)!
 

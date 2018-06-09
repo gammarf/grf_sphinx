@@ -13,60 +13,41 @@ Data collected by nodes is stored on a server and combined into coherent
 products.  These products are accessible through a web interface, in visually
 appealing, easy-to-use form.
 
+.. figure:: _static/images/srv_landing.jpg
+
+    Web interface, landing page
+
 Applications
 ============
 Some examples of what has been implemented, or may be easily implemented,
 using the system include:
 
-    * tracking satellites and other space objects
-    * estimating the location of transmitters using TDOA
-    * building direction finding networks (e.g. for fox hunts)
-    * channel location and identification
-    * creating timelines of activity on a radio channel
+    * Monitoring ham radio activity on repeaters in a city
+    * Distributed tracking of satellites
+    * Building direction finding networks (e.g. for fox hunts)
+    * Spectrum enumeration (finding channels and guessing modulation) [under development]
+    * Creating timelines of emergency services activity in an area
 
 Client
 ======
 There is an open-source client available `here <https://github.com/gammarf/gammarf>`_.
 We cover installation and usage of this client later in this documentation.
 
-.. figure:: _static/images/client.png
-    :scale: 70 %
+.. figure:: _static/images/client.jpg
 
     ΓRF client software
 
 Server
 ======
-The server is composed of both open-source and proprietary software.
+The server collects and stores data from clients, and provides an elegant web interface for analysis of this data.
 
-.. figure:: _static/images/activity3.png
-    :scale: 70 %
+.. figure:: _static/images/srv_snapshot.jpg
 
-    Ham radio repeater activity.  Dense clusters of dots are conversations.  Graphed with `Grafana <https://grafana.com/>`_.
+    A 'snapshot' view of a spectrum slice as seen by a client
 
-.. figure:: _static/images/activity1.png
-    :scale: 70 %
+.. figure:: _static/images/srv_adsb_detail.jpg
 
-    Signal strength at a frequency, graphed over time.
-
-.. figure:: _static/images/tpms.png
-    :scale: 70 %
-
-    Car activity in the node's local area (as determined by `TPMS <https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system>`_ signals)
-
-.. figure:: _static/images/servermap.png
-    :scale: 100 %
-
-    A cluster of nodes are mapped, along with cluster reference transmitters.
-
-.. figure:: _static/images/server_interesting.png
-    :scale: 50 %
-
-    Each node has its own set of 'interesting frequencies' it can monitor.
-
-.. figure:: _static/images/server_snapshot.png
-    :scale: 50 %
-
-    The 'snapshot' client module takes a picture of a swath of spectrum and sends it to the server.
+    Timeline of ADS-B intercepts for a particular aircraft
 
 ΓRF documentation
 =====================

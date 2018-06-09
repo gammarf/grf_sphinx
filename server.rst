@@ -22,6 +22,10 @@ that server.
 Web Interface
 =============
 
+.. figure:: _static/images/srv_landing.jpg
+
+    Web interface, landing page
+
 Server (web) accounts are not linked to station accounts.  While it may be convenient to have your stationid and your web login
 and password the same, it's not strictly necessary.  This makes sense when you consider that a single user may host multiple
 stations.
@@ -30,17 +34,60 @@ When you log in to the server, you will see a map with the cluster you belong to
 stations in your cluster, and your cluster's reference transmitters.  Icons for stations will vary in color depending on their
 status (offline, online using static coordinates, online using GPS).
 
-.. image:: _static/images/servermap.png
-    :scale: 35 %
-
 A menu on the left provides access to the different functions.  For now these include 'snapshot', 'interesting', and 'dashboards'.
 The later are based on Grafana.
+
+Subject Pages
+=============
+
+There are pages for each subject (client module type), which list unique identifiers (such as frequency) that appear in the
+server databases.  Below are a few examples.
+
+.. figure:: _static/images/srv_interesting.jpg
+    :align: center
+    :width: 70%
+
+.. figure:: _static/images/srv_ism433.jpg
+    :align: center
+    :width: 70%
+
+.. figure:: _static/images/srv_p25.jpg
+    :align: center
+    :width: 70%
+
+.. figure:: _static/images/srv_adsb.jpg
+    :align: center
+    :width: 70%
+
+Target Details
+==============
+
+A target (such as a frequency) has time series information stored in the server.  This information can be displayed and analyzed.
+
+.. figure:: _static/images/srv_adsb_detail.jpg
+
+    Timeline of activity for a particular monitored aircraft
+
+Grafana
+=======
+
+`Grafana <https://grafana.com/>`_ is installed on the server and gives the user fine-grained access to the time series.
+
+.. figure:: _static/images/grafana_ham.jpg
+
+    Grafana representation of time series for ham radio frequencies
+
+.. figure:: _static/images/grafana_air.jpg
+
+    Grafana representation of time series for aircraft
+
 
 Triggers
 ========
 
-.. image:: _static/images/triggers.png
-    :scale: 50 %
+.. figure:: _static/images/srv_triggers.jpg
+
+    Currently active triggers
 
 The triggers system allows the user to define criteria on which an alert will be recorded and issued.  Triggers are sent to a slack
 channel, as defined in the server configuration.
