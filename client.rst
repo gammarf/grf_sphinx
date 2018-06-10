@@ -4,10 +4,14 @@ Client
 This covers the open-source client.
 
  .. figure:: _static/images/client.jpg
+    :align: center
+    :width: 70%
 
     ΓRF client software
 
  .. figure:: _static/images/array.jpg
+    :align: center
+    :width: 70%
 
     An array of RTL-SDR SDRs, used by a client
 

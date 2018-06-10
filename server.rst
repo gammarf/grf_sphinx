@@ -1,9 +1,9 @@
 Server
 ******
 
-Server source is not (yet) open.  This section covers basic server structure and usage from a consumer standpoint.
-
-You can log into the demo server (https://gammarf.io:8080); user and pass are 'grfdemo'.
+This section covers basic server structure and usage from a consumer standpoint.  Server source is
+not yet open.  However the server is free to use and anyone can create their own clusters.  One can
+log into the server (https://gammarf.io:8080) with user and pass 'grfdemo' for a tour.
 
 
 Organization
@@ -12,12 +12,8 @@ Organization
 A server may host many *clusters*.  Clusters are groupings of stations.  There may be a different cluster per city, for example.
 
 Clusters are composed of *stations*.  A station is identified by a *stationid* which is unique to both the cluster and the server.
-Because a stationid is unique to the server (not just the cluster), users in different clusters can message each other, and request
-remotetasks from one another, across cluster boundaries.
-
-A server has an administrator that can add, delete, and edit clusters, stations, and other information for stations that utilize
-that server.
-
+Because a stationid is unique to the server, users in different clusters can message each other, request remotetasks from one
+another, across cluster boundaries.
 
 Web Interface
 =============
@@ -26,16 +22,13 @@ Web Interface
 
     Web interface, landing page
 
-Server (web) accounts are not linked to station accounts.  While it may be convenient to have your stationid and your web login
-and password the same, it's not strictly necessary.  This makes sense when you consider that a single user may host multiple
-stations.
+Server (web) accounts are linked to station accounts.  That is, each station has a corresponding logon on the server.
 
 When you log in to the server, you will see a map with the cluster you belong to centered.  On this map you will see markers for
 stations in your cluster, and your cluster's reference transmitters.  Icons for stations will vary in color depending on their
 status (offline, online using static coordinates, online using GPS).
 
-A menu on the left provides access to the different functions.  For now these include 'snapshot', 'interesting', and 'dashboards'.
-The later are based on Grafana.
+A menu on the left provides access to product pages for each station in the cluster.
 
 Subject Pages
 =============
@@ -68,7 +61,7 @@ A target (such as a frequency) has time series information stored in the server.
     :align: center
     :width: 70%
 
-    Timeline of activity for a particular monitored aircraft
+    Timeline of activity for a particular aircraft
 
 Grafana
 =======
@@ -76,13 +69,14 @@ Grafana
 `Grafana <https://grafana.com/>`_ is installed on the server and gives the user fine-grained access to the time series.
 
 .. figure:: _static/images/grafana_ham.jpg
+    :align: center
 
     Grafana representation of time series for ham radio frequencies
 
 .. figure:: _static/images/grafana_air.jpg
+    :align: center
 
     Grafana representation of time series for aircraft
-
 
 Triggers
 ========
@@ -91,10 +85,7 @@ Triggers
     :align: center
     :width: 70%
 
-The triggers system allows the user to define criteria on which an alert will be recorded and issued.  Triggers are sent to a slack
-channel, as defined in the server configuration.
-
-The following types of triggers are defined.  They are not all available for every subject:
+Using the triggers system, the user can be notified when certain conditions occur.  The following types of triggers are defined:
 
 * hit: Any activity in a time series triggers an alert
 * pwr >=: Power exceeding or equal to the trigger value will trigger an alert
@@ -102,3 +93,5 @@ The following types of triggers are defined.  They are not all available for eve
 * rate >=: Activity in the time series at a rate greater than or equal to the trigger value will trigger an alert
 * rate <: Activity at a rate less than the trigger value will trigger an alert
 * no hits past 'x' minutes: No activity for the trigger value (as minutes) will trigger an alert.  Useful for monitoring station health (with the 'stations' subject)
+
+When a trigger's conditions are met, it issues an alert.  This shows up on the triggers page, and can also be sent to a Slack channel.
