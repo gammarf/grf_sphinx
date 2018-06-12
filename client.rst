@@ -248,9 +248,15 @@ Keep your antenna(s) by the window.
 
 GPS
 ---
-``gpsd`` needs to be running and listening on localhost for GPS to work.
-If you have problems with GPS, see
-`this page <http://www.catb.org/gpsd/installation.html>`_.
+You should enable GPS in the client configuration if your node will be mobile.
+If your node will not be mobile, you can specify static coordinates in the
+configuration.  For the sake of accuracy, specify coordinates as accurately as
+possible.
+
+``gpsd`` needs to be running and listening on localhost for GPS to work (or, you
+can specify an external gpsd server in the configuration.)
+`This page <http://www.catb.org/gpsd/installation.html>`_ is helpful for getting
+gpsd to work.
 
 Ports
 -----

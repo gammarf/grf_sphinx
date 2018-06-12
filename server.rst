@@ -3,7 +3,7 @@ Server
 
 This section covers basic server structure and usage from a consumer standpoint.  Server source is
 not yet open.  However the server is free to use and anyone can create their own clusters.  One can
-log into the server (https://gammarf.io:8080) with user and pass 'grfdemo' for a tour.
+log into the kcgrf server (https://kcgrf.gammarf.io) with user and pass 'grfdemo' for a tour.
 
 
 Organization
@@ -12,8 +12,10 @@ Organization
 A server may host many *clusters*.  Clusters are groupings of stations.  There may be a different cluster per city, for example.
 
 Clusters are composed of *stations*.  A station is identified by a *stationid* which is unique to both the cluster and the server.
-Because a stationid is unique to the server, users in different clusters can message each other, request remotetasks from one
-another, across cluster boundaries.
+Because a stationid is unique to the server, users in different clusters can message each other and request remotetasks from one
+another across cluster boundaries.  All stations on a server will appear on the map, regardless of which cluster they are a part of.
+So it makes sense that all stations in the same geographical area be a part of the same cluster.
+
 
 Web Interface
 =============
@@ -24,9 +26,11 @@ Web Interface
 
 Server (web) accounts are linked to station accounts.  That is, each station has a corresponding logon on the server.
 
-When you log in to the server, you will see a map with the cluster you belong to centered.  On this map you will see markers for
-stations in your cluster, and your cluster's reference transmitters.  Icons for stations will vary in color depending on their
-status (offline, online using static coordinates, online using GPS).
+If you have not logged in to the server, upon visiting it you will see a logon page and a link to a self-explanitory sign-up page.
+After you've signed up (using the cluster name provided by your friends, or creating your own), you will be directed to the
+main page.  There you will see a map centered on the coordinates of the cluster you belong to.  On this map you will see markers for
+stations in your cluster (if they've ever been online), and your cluster's reference transmitters.
+Icons for stations will vary in color depending on their status (offline, online using static coordinates, online using GPS).
 
 A menu on the left provides access to product pages for each station in the cluster.
 
@@ -40,13 +44,16 @@ server databases.  Below are a few examples.
     :align: center
     :width: 70%
 
+
 .. figure:: _static/images/srv_ism433.jpg
     :align: center
     :width: 70%
 
+
 .. figure:: _static/images/srv_p25.jpg
     :align: center
     :width: 70%
+
 
 .. figure:: _static/images/srv_adsb.jpg
     :align: center
