@@ -22,9 +22,10 @@ Installation
 
 1. ``git clone https://github.com/gammarf/gammarf``
 
-2. Adjust gammarf.conf.  Get ``station_id`` and ``station_pass`` from your server administrator
+2. Adjust gammarf.conf.  Set ``station_id`` and ``station_pass`` to what you registered on the server's signup page.
 
-3. ``./prepare; ./run.sh`` (assumes you have Docker installed)
+3. ``./prepare; ./run.sh``.  This assumes Docker is installed and running.  You can save CPU / memory by doing this
+   without Docker, but you'll need to install packages manually.
 
 4. If you're using a HackRF (necessary for most functionality), flash the rom with the newest firmware version.  This is a must!
 
