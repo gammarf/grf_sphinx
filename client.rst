@@ -46,7 +46,7 @@ Below is an example configuration file::
     server_host = gammarf.io
     data_port = 9090
     cmd_port = 9091
-    server_web_proto = http
+    server_web_proto = https
     server_web_port = 8080
 
     [startup]
