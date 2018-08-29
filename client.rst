@@ -153,6 +153,8 @@ start with a ``#`` are ignored.  Tab completion is available.
 
     * ``interesting_add``: Add an entry to the station's 'interesting' list
 
+    * ``interesting_clone``: CLone interesting frequencies from another station
+
     * ``interesting_del``: Remove an entry from the station's 'interesting' list
 
     * ``interesting``: Show the station's current 'interesting' list
