@@ -169,6 +169,12 @@ start with a ``#`` are ignored.  Tab completion is available.
 
     * ``now``: Show the current date and time, according to the node (UTC)
 
+    * ``p25_add``: Add an entry to the station's list of p25 talkgroups
+
+    * ``p25_del``: Remove an entry from the station's list of p25 talkgroups
+
+    * ``p25``: Show the station's current list of p25 talkgroups
+
     * ``pwr``: Show power at a frequency (requires HackRF)
 
     * ``quit``: Exit the client
