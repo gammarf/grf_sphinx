@@ -9,6 +9,10 @@ A web-based system allows users to view information from and about each station 
 .. image:: _static/images/srv_landing.png
     :align: center
 
+Status
+======
+The client and server are beta.  Please report any bugs to admin /at/ gammarf.io
+
 Applications
 ============
 Below are some examples of what can currently be done with the system.  Development is in early stages and many more capabilities are expected to emerge.
