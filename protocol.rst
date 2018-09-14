@@ -4,7 +4,7 @@ Protocol
 Client / Server
 ===============
 
-While there is an "official" client, in reality data can be sent to the server by whatever mechanism you wish, as long as it adheres to the protocol below.  Each module sends its data as JSON, through a TCP socket.
+While there is an "official" client, in reality data can be sent to the server by whatever mechanism you wish, as long as it adheres to the protocol below.  Each module sends its data as JSON, through a ZMQ socket.  See the client source for details.
 
 **adsb**
 
