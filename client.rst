@@ -1,17 +1,13 @@
 Client
 ******
 
-This covers the open-source client.
-
  .. figure:: _static/images/client.jpg
     :align: center
-    :width: 70%
 
     ΓRF client software
 
  .. figure:: _static/images/array.jpg
     :align: center
-    :width: 70%
 
     An array of RTL-SDR SDRs, used by a client
 
@@ -27,9 +23,9 @@ Installation
 3. ``./prepare; ./run.sh``.  This assumes Docker is installed and running.  You can save CPU / memory by doing this
    without Docker, but you'll need to install packages manually.
 
-4. If you're using a HackRF (necessary for most functionality), flash the rom with the newest firmware version.  This is a must!
+4. If you're using a HackRF (necessary for most functionality), flash the rom with the newest firmware version, and use the latest libraries.  This is a must!
 
-5. Make sure all clients are running time synchronization services (ntpd, timesyncd)!
+5. Make sure all clients are running time synchronization services (ntpd, timesyncd)
 
 
 Configuration
@@ -141,11 +137,7 @@ Configuration Sections
 Usage
 =====
 
-The client will identify RTL-SDR devices and HackRF.  The client can use many
-RTL-SDRs, but only the first HackRF.  Once initialization is complete, you
-will be presented with a prompt.  You can use the below commands.  Lines that
-start with a ``#`` are ignored.  Tab completion is available.
-
+The client will identify any available RTL-SDR devices, and the first HackRF.  You will be presented with a prompt.  Use the below command reference to get started (tab completion is available).
 
     * ``devs``: Show loaded devices and running modules.  Time is UTC
 
@@ -248,7 +240,7 @@ USB Bandwidth
 Use a maximum of four sticks per USB *controller*.  A controller is not
 the same thing as a port.  If you start having problems with device errors,
 segfaults, or other weird errors, try using less devices per controller.
-Give the HackRF its own dedicated USB 3.x controller.
+Give the HackRF its own dedicated USB controller.
 
 Noise
 -----
