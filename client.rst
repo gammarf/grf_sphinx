@@ -1,16 +1,13 @@
 Client
 ******
 
+ The client software runs on the distributed nodes.  From the interface the user can start and stop jobs that utilize the radio hardware attached.  Below is an image of the client software in action, folowed by an array of RTL-SDR radios used by a client.
+
  .. figure:: _static/images/client.jpg
     :align: center
 
-    ΓRF client software
-
  .. figure:: _static/images/array.jpg
     :align: center
-
-    An array of RTL-SDR SDRs, used by a client
-
 
 
 Installation
@@ -143,7 +140,7 @@ The client will identify any available RTL-SDR devices, and the first HackRF.  Y
 
     * ``help``: Show available commands
 
-    * ``interesting_add``: Add an entry to the station's 'interesting' list
+    * ``interesting_add``: Add an entry to the station's 'interesting' list.  Be descriptive - other stations may be interested in your monitored frequencies.
 
     * ``interesting_clone``: CLone interesting frequencies from another station
 
@@ -161,7 +158,7 @@ The client will identify any available RTL-SDR devices, and the first HackRF.  Y
 
     * ``now``: Show the current date and time, according to the node (UTC)
 
-    * ``p25_add``: Add an entry to the station's list of p25 talkgroups
+    * ``p25_add``: Add an entry to the station's list of p25 talkgroups.  Be descriptive - other stations may be interested in your talkgroups.
 
     * ``p25_del``: Remove an entry from the station's list of p25 talkgroups
 

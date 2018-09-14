@@ -4,23 +4,47 @@ Protocol
 Client / Server
 ===============
 
-While there is an "official" client, in reality data can be sent to the server
-by whatever mechanism you wish, as long as it adheres to the protocol below.
-Each module sends its data as JSON, through a TCP socket.
+While there is an "official" client, in reality data can be sent to the server by whatever mechanism you wish, as long as it adheres to the protocol below.  Each module sends its data as JSON, through a TCP socket.
 
-**scanner**
+**adsb**
 
 .. code-block:: json
 
     {
-        "lat": float,
-        "lng": float,
-        "freq": int,
-        "pwr": float,
-        "rand": str,
-        "protocol": 1,
-        "stationid": str,
-        "module": 1,
+        "icao": string,
+        "callsign": string,
+        "aircraft_lat": string,
+        "aircraft_lng": string,
+        "altitude": string,
+        "heading": string,
+        "updownrate": string,
+        "speedtype": string,
+        "speed": string,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
+        "sign": [md5(station_pass + rand)]
+    }
+
+**channels**
+
+.. code-block:: json
+
+    {
+        "center": int,
+        "bw": int,
+        "pwr": string,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
         "sign": [md5(station_pass + rand)]
     }
 
@@ -29,15 +53,33 @@ Each module sends its data as JSON, through a TCP socket.
 .. code-block:: json
 
     {
-        "lat": float,
-        "lng": float,
         "freq": int,
         "pwr": float,
-        "rand": str,
-        "ts": str,
-        "protocol": 1,
-        "stationid": str,
-        "module": 6,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
+        "sign": [md5(station_pass + rand)]
+    }
+
+**ism433**
+
+.. code-block:: json
+
+    {
+        "model": string,
+        "type": string,
+        "id": int,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
         "sign": [md5(station_pass + rand)]
     }
 
@@ -46,49 +88,73 @@ Each module sends its data as JSON, through a TCP socket.
 .. code-block:: json
 
     {
-        "talkgroup": str,
-        "lat": float,
-        "lng": float,
-        "rand": str,
-        "protocol": 1,
-        "stationid": str,
-        "module": 4,
+        "talkgroup": string,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
         "sign": [md5(station_pass + rand)]
     }
+
+**scanner**
+
+.. code-block:: json
+
+    {
+        "freq": int,
+        "pwr": float,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
+        "sign": [md5(station_pass + rand)]
+    }
+
+**single**
+
+.. code-block:: json
+
+    {
+        "freq": int,
+        "thresh": float,
+        "pwr": float,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
+        "sign": [md5(station_pass + rand)]
+    }
+
+
+
 
 **snapshot**
 
 .. code-block:: json
 
     {
-        "lat": float,
-        "lng": float,
-        "snapshotid": str,
-        "rawdata": str,
-        "type": str,
-        "rand": str,
-        "protocol": 1,
-        "stationid": str,
-        "module": 5,
-        "sign": [md5(station_pass + rand)]
-    }
-
-**spectrum**
-
-.. code-block:: json
-
-    {
-        "lat": float,
-        "lng": float,
+        "snapshotid": string,
         "freq": int,
-        "mean": str,
-        "stdev": str,
-        "range": str,
-        "protocol": 1,
-        "stationid": str,
-        "module": 2,
+        "pwr": string,
+        "stationid": string,
+        "dt": int,
+        "lat": string,
+        "lng": string,
+        "protocol": int,
+        "module": int,
+        "rand": string,
         "sign": [md5(station_pass + rand)]
     }
+
 
 Utility API
 ===========

@@ -1,6 +1,6 @@
 Distributed Radio Signal Collection and Analysis
 ================================================
-ΓRF ("GammaRF") is a radio signal collection, storage, and analysis system based on inexpensive distributed nodes and a central server.
+ΓRF ("GammaRF", or "GRF") is a radio signal collection, storage, and analysis system based on inexpensive distributed nodes and a central server.  Put another way, it is a distributed system for aggregating information about signals, and a back-end infrastructure for processing this collected information into coherent "products".
 
 Nodes utilize inexpensive hardware such as RTL-SDR and HackRF radios, and computers as small and inenexpensive as Intel NUCs.  Each node runs modules which provide various radio monitoring functionality, such as monitoring frequencies for "hits", watching power levels, keeping track of aircraft (through ADS-B), and more.  Nodes are distributed geographically and their data is combined on the server for hybrid analysis.
 
