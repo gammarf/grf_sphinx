@@ -1,7 +1,7 @@
 Server
 ******
 
-This section covers basic server structure and usage from a user perspective.  The server is free to use and anyone can create their own clusters.  To access the server navigate to https://kcgrf.gammarf.io and create an account.  While creating an account, be sure to specify the same cluster name as other stations you want to work with (share information with and track).
+This section covers basic server structure and usage from a user perspective.  The server is free to use and anyone can create their own clusters.  To access the server navigate to https://kcgrf.gammarf.io and create an account.  While creating an account, be sure to specify the same cluster name as other stations you want to work with.
 
 
 Organization
@@ -9,9 +9,7 @@ Organization
 
 A server hosts an arbitrary number of *clusters*.  Clusters are groupings of stations.  There may be a different cluster per city, for example.
 
-Clusters are composed of *stations*.  A station is identified by a *stationid* which is unique to both the cluster and the server.
-Because a stationid is unique to the server, users in different clusters can message each other and request remotetasks from one
-another across cluster boundaries (using the GRF client).  All stations on a server will appear on the map, regardless of which cluster they are a part of.
+Clusters are composed of one or more stations.  A station is identified by a *stationid* which is unique to both the cluster and the server.  Because a stationid is unique to the server, users in different clusters can message each other and request remotetasks from one another across cluster boundaries (using the GRF client).  All stations on a server will appear on the map, regardless of which cluster they are a part of.
 
 
 Web Interface
@@ -33,35 +31,37 @@ Subject Pages
 There are pages for each subject (client module type), which list unique identifiers (such as frequency) that appear in the
 server databases.  Subject pages are where you access the information sent by the clients, and information derived from client measurements by the server.  Below are a few examples.
 
-.. figure:: _static/images/srv_interesting.jpg
+.. figure:: _static/images/srv_interesting.png
     :align: center
     :width: 70%
 
 
-.. figure:: _static/images/srv_ism433.jpg
+.. figure:: _static/images/srv_ism433.png
     :align: center
     :width: 70%
 
 
-.. figure:: _static/images/srv_p25.jpg
+.. figure:: _static/images/srv_p25.png
     :align: center
     :width: 70%
 
 
-.. figure:: _static/images/srv_adsb.jpg
+.. figure:: _static/images/srv_adsb.png
     :align: center
     :width: 70%
 
 Target Details
 ==============
 
-A target (such as a frequency) has time series information stored in the server.  This information can be displayed and analyzed.
+A target (such as a frequency) has time series information stored in the server.  This information can be displayed and analyzed.  Below you see a station's time-line of a ham radio repeater, followed by an aggregate aircraft (ADS-B) plot.
 
-.. figure:: _static/images/srv_adsb_detail.jpg
+.. figure:: _static/images/srv_repeater.png
     :align: center
     :width: 70%
 
-    Timeline of activity for a particular aircraft
+.. figure:: _static/images/srv_adsb_all.png
+    :align: center
+    :width: 70%
 
 Triggers
 ========

@@ -34,16 +34,13 @@ The server collects, stores, and correlates data from clients, and provides an e
 
 .. figure:: _static/images/srv_snapshot.jpg
     :align: center
-    :width: 70%
 
 
 .. figure:: _static/images/srv_repeater.png
     :align: center
-    :width: 70%
 
 .. figure:: _static/images/srv_repeaters.png
     :align: center
-    :width: 70%
 
 ΓRF documentation
 =====================
