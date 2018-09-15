@@ -1,7 +1,7 @@
 Client
 ******
 
- The client software runs on the distributed nodes.  From the interface the user can start and stop jobs that utilize the radio hardware attached.  Below is an image of the client software in action, folowed by an array of RTL-SDR radios used by a client.
+ The client software runs on the distributed nodes.  From the interface the user can start and stop jobs that utilize the radio hardware attached.  Below is an image of the client software in action, followed by an array of RTL-SDR radios used by a client.
 
  .. figure:: _static/images/client.jpg
     :align: center
