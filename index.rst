@@ -15,9 +15,10 @@ The client and server are beta.  Please report any bugs to admin /at/ gammarf.io
 
 Applications
 ============
-Below are some examples of what can currently be done with the system.  Development is in early stages and many more capabilities are expected to emerge.
+Below are some examples of what can currently be done with the system.  These are just a few potential use cases.
 
     * Monitoring ham radio activity on repeaters in a city
+    * Detecting jamming on arbitrary channels / frequencies; anti-jam
     * Creating timelines of emergency services activity in an area
     * Distributed tracking of satellites and other mobile emitters
     * Monitoring power at a frequency, for example as a mobile node traverses an area (e.g. signal source location)
