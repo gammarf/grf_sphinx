@@ -1,7 +1,9 @@
 Server
 ******
 
-This section covers basic server structure and usage from a user perspective.  The server is free to use and anyone can create their own clusters.  To access the server navigate to https://kcgrf.gammarf.io and create an account.  While creating an account, be sure to specify the same cluster name as other stations you want to work with.
+~~This section covers basic server structure and usage from a user perspective.  The server is free to use and anyone can create their own clusters.  To access the server navigate to https://kcgrf.gammarf.io and create an account.  While creating an account, be sure to specify the same cluster name as other stations you want to work with.~~
+
+The example server is no longer online.  Contact us for information about setting up a server for you.
 
 
 Organization
